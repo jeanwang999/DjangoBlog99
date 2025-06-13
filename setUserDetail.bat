@@ -1,0 +1,9 @@
+@echo off
+
+
+git config --global user.name "jeanwang999"
+git config --global user.email "weizi.wang75@gmail.com"
+
+
+echo "設定完成"
+pause

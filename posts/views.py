@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from posts.models import Post
+from datetime import datetime
 
 
 # Create your views here.
@@ -16,5 +17,12 @@ def index(request):
 
 # def定義想要新增的頁面的名稱 再去urls.py 新增path
 
+
 def about(request):
-    
+    return HttpResponse("hello world")
+
+
+def index_use_template(requests):
+    article_records = Post.objects.all()
+    now = datetime.now()
+    return render(requests, "index.html", locals())
