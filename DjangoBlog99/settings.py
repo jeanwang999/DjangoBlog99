@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "posts",
+    "line_bot",
+
 ]
 
 MIDDLEWARE = [
@@ -130,3 +132,7 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+LINE_CHANNEL_SERCRET = "d60e0ac0c1d191c32e6fd5510b84ebe6"
+LINE_CHANNEL_TOKEN = "J4saBa4RmQyM72jxtuHO+OS6CbfD1UfSbUe26onI+t4SV4/AzOD7TUMXrEI4GIf+J/CgHLfic/VxfcLzLqSEHj5DilhUnu5HP2CuTvJDdpXMXh5pQnu2LiVvtqVo6rXR0LRl3z5JESJLpKZscan6TQdB04t89/1O/w1cDnyilFU="
