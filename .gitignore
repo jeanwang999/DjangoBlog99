@@ -139,3 +139,9 @@ GitHub.sublime-settings
 
 public/*
 !public/.gitkeep
+
+# 忽略
+public/uploads  
+# 保留
+!public/uploads/*
+!public/uploads/.gitkeep
