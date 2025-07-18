@@ -33,6 +33,12 @@ def showPost(requests, slug):
     article = Post.objects.get(slug=slug)
     return render(requests, 'pages/post.html', locals())
 
+# 使用JsonResponse 
+from django.http import JsonResponse
+def showArticleList(requests):
+    article = Post.objects.all().values()
+    article = list(article)
+    return JsonResponse(article, safe=False)
 
 def login(requests):
     return render(requests, 'pages/login.html')
